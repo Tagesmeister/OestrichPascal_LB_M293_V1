@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lebenslauf.css">
+    <title>LEBENSLAUF</title>
+</head>
+<body>
+    
+        <nav class= "nav">
+            <div class="nav-container">
+                <a class="nav-tab" href="index.html">HOME</a>
+                <a class="nav-tab" href="AboutMe.html">ABOUT ME</a>
+                <a class="nav-tab" href="Projekte.html">PROJEKTE</a>
+                <a class="nav-tab" href="Kontakt.html">KONTAKT</a>
+            </div>
+        </nav>
+        <header class ="Titel">
+            <h1>LEBENSLAUF</h1>
+            <br><br>
+            <div calss="subtext-container">
+                <p>Es freut mich, dass sie hier hergefunden haben. <br>Hier ist mein Lebenslauf. Dort werden Sie den Lauf meiner Kariere sehen.<br> Ebenfalls finden Sie hier Informationen, in welche Schule ich gegangen bin und was meine Sprachkenntnisse sind. Momentan bin ich der Ausbildung in der IMS (Informatik-Mittelschule). 
+                    <br><br>Bei Ausbildung geht der Lebenslauf von unten nach oben. Und bei Sprachkenntnissen, wird angegeben, ab wann ich diese Sprache unterrichtet bekommen habe.<br><br>
+                    Wenn Sie über die Attribute und oder Entitäten gehen, färben sich die zusammengehörenden Elemente rot. </p>
+                </div>
+            </header>
+
+        <main>
+            <section class="lebenslauf-box">
+                
+                <div class="image-container">
+                    <img src="Ich.jpeg" alt="Ich">
+                </div>
+    
+                <div class="lebenslauf-att">
+                    <p class="tutorial">Klicke auf die blaue Attributen</p>
+
+                    <h2>PERSONALIEN</h2>
+
+                    <h3 class="item-1">Name</h3>
+                    <h3 class="item-2">Geburtsdatum</h3>
+                    <h3 class="item-3">Nationalität</h3>
+                    
+                    <br>
+                    <h2>AUSBILDUNG</h2>
+
+                    <h3 class="item-4">2021 - 2022</h3>
+                    <br>
+                    <h3 class="item-5">2018 - 2021</h3>
+                    <br>
+                    <h3 class="item-6">2014 - 2018</h3>
+                    <br>
+                    <h3 class="item-7">2012 - 2014</h3>
+                    <!-- Rest der h3 Elemente -->
+
+                    <br>
+                    <h2>SPRACHKENNTNISSE</h2>
+
+                    <h3 class="item-8">Deutsch</h3>
+                    <h3 class="item-9">Englisch</h3>
+                    <h3 class="item-10">Französich</h3>
+
+                </div>
+        
+                <div class="lebenslauf-if">
+                    <br><br><br><br>
+                    <p class="item-1">Pascal Oestrich</p>
+                    <p class="item-2">20.11.2004</p>
+                    <p class="item-3">Schweiz / Deutsch</p>
+
+                    <br><br>
+
+                    <p class="item-4">3. Sekundarschule, Kreisschule-Surbtal, Lengnau (AG)</p>
+                    <p class="item-5">1.-2 -3. Realschule, Kreisschule-Surbtal, Lengnau (AG)</p>
+                    <p class="item-6">2.-6. Primarschule, Schneisingen</p>
+                    <p class="item-7">1.-2. Einschulungsklasse, Lengnau (AG)</p>
+                    <!-- Rest der p Elemente -->
+
+                    <br>
+                    
+                    <p class="item-8">Muttersprache</p>
+                    <p class="item-9">Schulkenntnnisse ab 3. Schuljahr</p>
+                    <p class="item-10">Schulkenntnnisse ab 6. Schuljahr</p>
+                </div>
+            </section>
+            
+        </main>
+        
+        <script>
+            document.querySelectorAll('.lebenslauf-att h3, .lebenslauf-if p').forEach(element => {
+                element.addEventListener('mouseover', () => {
+                    const className = element.className;
+                    document.querySelectorAll(`.${className}`).forEach(el => el.style.color = '#ff0266');
+                });
+        
+                element.addEventListener('mouseout', () => {
+                    const className = element.className;
+                    document.querySelectorAll(`.${className}`).forEach(el => el.style.color = '');
+                });
+            });
+        </script>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Pascal Oestrich. All rights reserved.</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="Support.html" target="_blank">Support | Infos</a></li>
+                </ul>
+            </div>
+        </footer>
+
+</body>
+</html>

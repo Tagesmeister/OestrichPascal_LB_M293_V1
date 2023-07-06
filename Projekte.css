@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "ROBOTO", sans-serif;
+    background-color: #1e1f26;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh; /* Änderung von height zu min-height */
+}
+
+.Titel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  position: relative;
+  text-align: center;
+  padding: 0 2em;
+  margin: 75px;
+
+  
+}
+.Titel h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5vw;
+  margin: 0;
+  letter-spacing: 0.5rem;
+  color: #03dac6;
+  transition: all 0.3s ease;
+  z-index: 3;
+  margin-top: 60px;
+}
+
+h1:hover {
+    transform: translate3d(0, -10px, 22px);
+    color: #ff0266;
+}
+.nav{
+    background: #1e1f26;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    margin-right:50px;
+}
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  position: absolute;
+  box-shadow: 3px 25px 30px rgba(0, 0, 0, 0.5);
+  background: #1e1f26;
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-first {
+  position: fixed;
+  top: 75px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-second {
+  position: fixed;
+  top: 0;
+}
+
+.nav-tab {
+  flex: 1;
+  text-align: center;
+  color: #03dac6;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1.5vw;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-tab:hover {
+  color: #1e1f26;
+  background: #03dac6;
+  transition: all 0.5s ease;
+}
+
+.nav-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #03dac6;
+  transition: left 0.3s ease;
+}
+.Titel p{
+  font-size: 20px;
+  width: 750px;
+  color: white;
+}
+footer {
+  background-color: #1e1f26;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  color: #c9e4e1;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.socials {
+  list-style: none;
+  padding-left: 0;
+}
+
+.socials li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #03dac6;
+  transition: color 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  color: #ff0266;
+}
+
+.flexBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.flexBox-item{
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  max-width: 1000px; 
+  margin: 10px;
+  margin-top: 50px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden; 
+  padding: 20px; 
+}
+
+.image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  margin: 0 auto; 
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.flexBox-item:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.GitHub {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .Titel h1 {
+    font-size: 5vw; /* Vergrößern der Schriftgröße */
+    letter-spacing: 0.3rem; /* Verringern des Buchstabenabstands */
+    
+  }
+  .Titel{
+    height: 7vh;
+    margin-top: 180px;
+    
+  }
+  .Titel p{
+    font-size: 13px;
+    width: 285px;
+  }
+
+  .nav-tab {
+    font-size: 3vw; /* Vergrößern der Schriftgröße für Navigationstabs */
+    padding: 5px; /* Reduziere padding */
+  }
+  
+  .nav {
+    margin-right: 20px; 
+    padding: 10px; 
+  }
+
+  
+  .flexBox {
+    font-size: 16px; 
+    padding-top:0.01px;
+    margin-top: 100px;
+  }
+  
+  .text {
+    font-size: 16px; 
+  }
+  
+  .footer-content p,
+  .socials {
+    font-size: 12px;
+
+    margin-top: 20px;
+  }
+
+  
+}

@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "ROBOTO", sans-serif;
+    background-color: #1e1f26;
+}
+.Titel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  position: relative;
+  text-align: center;
+  padding: 0 2em;
+  margin: 75px;
+
+  
+}
+.Titel h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5vw;
+  margin: 0;
+  letter-spacing: 0.5rem;
+  color: #03dac6;
+  transition: all 0.3s ease;
+  z-index: 3;
+  margin-top: 60px;
+}
+.Titel p{
+  font-size: 20px;
+  width: 750px;
+}
+
+h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #ff0266;
+}
+.nav{
+  background: #1e1f26;
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  text-decoration: none;
+  margin-right:50px;
+}
+.nav-container{
+display: flex;
+flex-direction: row;
+min-width: 100%;
+position: absolute;
+box-shadow: 3px 25px 30px rgba(0, 0, 0, 0.5);
+background: #1e1f26;
+z-index: 10;
+transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-first {
+position: fixed;
+top: 75px;
+transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-second {
+position: fixed;
+top: 0;
+}
+
+.nav-tab {
+flex: 1;
+text-align: center;
+color: #03dac6;
+letter-spacing: 0.1rem;
+transition: all 0.5s ease;
+font-size: 1.5vw;
+text-decoration: none;
+padding: 10px;
+}
+
+.nav-tab:hover {
+color: #1e1f26;
+background: #03dac6;
+transition: all 0.5s ease;
+}
+
+.nav-tab-slider {
+position: absolute;
+bottom: 0;
+width: 0;
+height: 2px;
+background: #03dac6;
+transition: left 0.3s ease;
+}
+
+
+
+
+
+
+/*https://www.mediaevent.de/tutorial/flexbox.html*/
+
+.lebenslauf-box {
+  position: relative; /* Dies ermöglicht es uns, das Bild innerhalb dieser Box absolut zu positionieren */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 60px;
+  overflow: hidden;
+  max-width: 90%;
+
+}
+
+.image-container {
+  position: absolute;
+  top: 90px; /* Abstand von oben */
+  right: 90px; /* Abstand von rechts */
+}
+
+.image-container img {
+  border-radius: 10px;
+  max-width: 120px; /* Stellen Sie die maximale Breite des Bildes ein */
+  padding: 4px;
+  background: rgb(3, 168, 218);
+}
+
+.einText {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+
+
+.lebenslauf-att,
+.lebenslauf-if {
+  float: left;
+}
+
+.lebenslauf-att {
+  width: 48%;
+  padding-right: 0px; /* Erhöhtes padding-right */
+  border-right: 3px solid #eee; /* Erhöhte border-right */
+}
+
+.lebenslauf-if {
+  width: 50%;
+  padding-left: 70px; /* Erhöhtes padding-left */
+
+}
+
+h3 {
+  transition: all 0.3s ease 0s;
+  margin-bottom: 15px; /* Erhöhtes margin-bottom */
+  font-size: 30px; /* Erhöhte Schriftgröße */
+  color: #03a8da;
+}
+
+
+p {
+  transition: all 0.3s ease 0s;
+  margin-bottom: 15px; /* Erhöhtes margin-bottom */
+  font-size: 30px;
+  color: white;
+}
+.lebenslauf-att,
+.lebenslauf-if{
+  color: #ff0266;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+footer {
+  flex-shrink: 0;
+  background-color: #1e1f26;
+  padding: 10px 0; /* Reduzierte Polsterung */
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  color: #c9e4e1;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding-top: 25px;
+}
+
+.socials {
+  list-style: none;
+  padding-left: 0;
+}
+
+.socials li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #03dac6;
+  transition: color 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  color: #ff0266;
+}
+
+.Abstand{
+
+  margin: 60px 0;
+}
+
+
+.lebenslauf-container {
+  display: grid;
+  gap: 10px;
+}
+
+.lebenslauf-item h3, .lebenslauf-item p {
+  margin: 0;
+  padding: 5px;
+}
+
+
+.lebenslauf-container {
+  display: grid;
+  gap: 10px;
+}
+
+.lebenslauf-item h3, .lebenslauf-item p {
+  margin: 0;
+  padding: 5px;
+}
+.tutorial{
+  visibility: hidden;
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 0.7;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  .lebenslauf-att, .lebenslauf-if {
+    /* Einstellen auf volle Breite und Entfernen der Ränder/Paddings */
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .lebenslauf-box {
+    /* Reduzierung des Abstands im Lebenslauf-Bereich */
+    padding: 20px;
+    margin-top: 10%;
+
+  }
+  .tutorial{
+    color: #03a8da;
+    visibility:visible;
+    font-size: 15px;
+  }
+
+  /* Reduzieren der Schriftgrößen für bessere Lesbarkeit auf kleineren Bildschirmen */
+  h2 {
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .Titel h1{
+    font-size: 16px;
+    padding-top:40px ;
+    margin-top: -60px;
+  }
+  .Titel{
+    margin-top: 160px;
+    
+  }
+
+  .nav-tab {
+    font-size: 3vw; /* Vergrößern der Schriftgröße für Navigationstabs */
+    padding: 5px; /* Reduziere padding */
+  }
+  
+  .nav {
+    margin-right: 20px; /* Verringern des rechten Randes der Navigation */
+    padding: 10px; /* Verringern des inneren Abstands */
+  }
+
+  .footer-content p,
+  .socials{
+  font-size: 12px;
+}
+.image-container img {
+  border-radius: 10px;
+  max-width: 80px; /* Stellen Sie die maximale Breite des Bildes ein */
+  padding: 5px;
+}
+.image-container {
+  position: absolute;
+  top: 10px; /* Abstand von oben */
+  right: 10px; /* Abstand von rechts */
+}
+.Titel p{
+  font-size: 13px;
+  width: 200px;
+}
+.lebenslauf-box {
+  margin-top: 7w0px;
+
+}
+.footer-content{
+  padding-top:25px ;
+}
+}
+
+
+
+
+
+
+
+
+

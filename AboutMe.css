@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ROBOTO", sans-serif;
+  background-color: #1e1f26;
+}
+.Titel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 21vh;
+  position: relative;
+  text-align: center;
+  padding: 0 2em;
+
+  
+}
+.Titel h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5vw;
+  margin: 0;
+  letter-spacing: 0.5rem;
+  color: #03dac6;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #ff0266;
+}
+.nav{
+  background: #1e1f26;
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  text-decoration: none;
+  margin-right:50px;
+}
+.nav-container{
+display: flex;
+flex-direction: row;
+min-width: 100%;
+position: absolute;
+box-shadow: 3px 25px 30px rgba(0, 0, 0, 0.5);
+background: #1e1f26;
+z-index: 10;
+transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-first {
+position: fixed;
+top: 75px;
+transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-second {
+position: fixed;
+top: 0;
+}
+
+.nav-tab {
+flex: 1;
+text-align: center;
+color: #03dac6;
+letter-spacing: 0.1rem;
+transition: all 0.5s ease;
+font-size: 1.5vw;
+text-decoration: none;
+padding: 10px;
+}
+
+.nav-tab:hover {
+color: #1e1f26;
+background: #03dac6;
+transition: all 0.5s ease;
+}
+
+.nav-tab-slider {
+position: absolute;
+bottom: 0;
+width: 0;
+height: 2px;
+background: #03dac6;
+transition: left 0.3s ease;
+}
+
+
+
+
+main {
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+}
+
+
+
+
+.FlexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container img {
+  border-radius: 10px;
+  max-width: 20%;
+  margin: 0 auto; /* zentriert das Bild */
+  padding: 5px;
+background: #03dac6;
+}
+
+.FlexBox h2 {
+  color: #ff0266;
+}
+
+.FlexBox p {
+  color: white;
+  margin: 0;
+}
+
+.flexBox-item {
+  flex: 1;
+  text-align: left;
+  background-color: #1e1f26;
+  letter-spacing: 0.5rem;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  min-height: 300px;
+  margin: 20px;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  font-family: 'Bacasime Antique', serif;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Mogra', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 6.5px;
+}
+.flexBox-item p{
+  color: #c9e4e1
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: #1e1f26;
+  padding: 10px 0; /* Reduzierte Polsterung */
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  color: #c9e4e1;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.socials {
+  list-style: none;
+  padding-left: 0;
+}
+
+.socials li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #03dac6;
+  transition: color 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  color: #ff0266;
+}
+
+@media (max-width: 800px) {
+
+  .nav h1
+  
+  {
+      font-size: 5vw;
+  }
+
+  .nav h2
+  {
+      font-size: 3vw;
+  }
+
+  .nav-tab {
+      font-size: 3vw;
+  }
+  .FlexBox {
+    flex-direction: column;
+    min-height: 10%;
+    align-items: stretch;
+}
+.Titel{
+  height: 7vh;
+  margin-top: 60px;
+}
+
+.flexBox-item {
+    flex: none;
+    width: 100%;
+    margin: 10px 0;
+    min-height: auto;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+.Titel h1 {
+    font-size: 16px; /* Ändere diese Größe entsprechend deinen Wünschen */
+    margin: 60px;
+}
+.flexBox-item p{
+  font-size: 10px;
+}
+.flexBox-item h2{
+  font-size: 12px;
+}
+.footer-content{
+  margin-top: 20px;
+}
+.footer-content p,
+.socials{
+  font-size: 12px;
+}
+.image-container img{
+  max-width:50% ;
+}
+
+}
+
